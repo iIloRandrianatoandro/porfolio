@@ -47,6 +47,23 @@
 			</div>
 
 		<!-- Scripts -->
+		<script>
+			let sary=['images/onn1.PNG','images/onn2.PNG','images/onn3.PNG','images/onn4.PNG'];
+			let img= document.querySelector('img');
+			function source (x){
+				img.src=sary[x];
+			}
+			let i=0;
+			function miverina (){
+				source(i);
+				if(i<sary.length-1)
+				i+=1;
+				else 
+				i=0;
+			}
+			function t(){setInterval(miverina,2000);}
+			window.addEventListener('load',t);
+		</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
